@@ -20,8 +20,8 @@ apply plugin: 'io.spring.dependency-management'
 
 group 'org.sample'
 version '1.0-SNAPSHOT'
-sourceCompatibility = project.'java.version'
-targetCompatibility =  project.'java.version'
+sourceCompatibility = 1.8
+//targetCompatibility =  project.'java.version'
 
 jar {
     baseName = 'gradle-springboot'
@@ -35,5 +35,5 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    testImplementation 'junit:junit'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
